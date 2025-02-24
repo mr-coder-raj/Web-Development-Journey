@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Varible</title>
+    <style>
+        :root {
+            /*made a variable named root*/
+            /*root me kuch bhi hota hai wo global variable hota hai*/
+            --color: blue;
+            --seccolor: rgb(154, 154, 238);
+            --defpad: 23px;
+            --defop: 0.4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div:first-child {
+            background-color: var(--color);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+        }
+
+        ul li:first-child {
+            --color: rgb(46, 220, 30);
+            background-color: var(--color);
+        }
+
+        .container {
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis recusandae quos mollitia dicta nesciunt
+        magni deleniti vero amet odio totam consequatur officiis quod adipisci distinctio a molestiae voluptatum vitae,
+        voluptas fuga nihil impedit suscipit. Et nesciunt quidem optio explicabo maxime error. Blanditiis ut official.
+        est!
+    </div>
+</body>
+
+</html>

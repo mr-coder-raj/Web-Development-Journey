@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Specifity value = 10 */
+        h1 {
+            /* background-color: blue; */
+            color: red;
+        }
+
+        /* Specifity value = 10 */
+        .yellow {
+            /* background-color: aqua; */
+            color: yellow;
+        }
+
+        /* Specifity value = 10 */
+        .cred {
+            /* background-color: brown; */
+            color: red;
+        }
+
+        /* Specifity value = 10 */
+        [data-x=a] {
+            color: chartreuse;
+        }
+
+        /* Specifity value = 10 */
+        .cpurple {
+            /* background-color: lightblue; */
+            color: purple;
+        }
+
+        /* Specifity value = 1 + 10 = 11 */
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* Pecific value => 1 + 10 + 10 + 10 + 10 = 41 */
+        a.harryclass.rohan-class[href]: hover {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- VISIT CODE WITH HARRY -->
+    https://www.codewithharry.com/tutorial/css-specificity/
+    <!-- Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector -->
+
+    <!-- Specificity Calculation
+    To calculate specificity, assign a value to each part of the selector:
+    
+    Universal Selector: 0
+    Element selectors and pseudo-elements: 1
+    Class selectors, attribute selectors, and pseudo-classes: 10
+    ID selectors: 100
+    Inline styles: 1000 -->
+
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">
+            CSS Specificity
+        </h1>
+    </div>
+
+</body>
+
+</html>

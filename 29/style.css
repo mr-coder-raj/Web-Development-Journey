@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            background-color: grey;
+        }
+
+        .card {
+            background-color: white;
+            width: 244px;
+            height: 500x;
+            border-radius: 10px;
+            padding: 0 0 30px;
+        }
+
+        .image {
+            padding: 7px;
+
+        }
+
+        .image img {
+            border-radius: 7px;
+        }
+
+        .capsule {
+            padding: 0 10px;
+            cursor: pointer;
+        }
+
+        .capsule span {
+            border: 1px solid grey;
+            border-radius: 10px;
+            padding: 3px 15px;
+            font-size: 10px;
+        }
+
+        .content {
+            padding: 3px 12px;
+            font-family: poppins;
+        }
+
+        .content h2 {
+            padding: 0 5px;
+            font-size: 30px;
+        }
+
+        .content p {
+            padding: 5px;
+            color: grey;
+            font-size: 12px;
+        }
+
+        .end {
+            text-align: center;
+            padding: 0 75px;
+        }
+
+        .end h3 {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            font-size: 10px;
+            background-color: rgb(178, 244, 244);
+            color: blue;
+            margin-top: 7px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .end h3:hover {
+            background-color: rgb(11, 171, 171);
+            color: rgb(38, 255, 0);
+        }
