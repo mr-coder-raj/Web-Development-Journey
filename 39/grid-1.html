@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <style>
+        .container {
+            width: 150vh;
+            height: 80vh;
+            border: 4px solid black;
+            display: grid;
+            /* grid-template-columns: [pehla] 120px [doosra] 100px [t];
+            grid-template-rows: 100px 100px 100px; */
+            grid-template-columns: repeat(4, minmax(100px, 1fr)
+                    /*minmax means minimum 100px rakhega and max 1fr or*/
+                    /*1fr*/
+                )
+                /*1fr 2fr 1fr*/
+            ;
+            /* gap: 10px 34px; */
+            /* Same as above line*/
+            row-gap: 10px;
+            column-gap: 34px;
+            justify-items: center;
+            align-items: center;
+            /* align-content: center;
+            justify-content: center; */
+            place-content: center;
+        }
+
+        .item {
+            border: 3px solid blue;
+            height: 55px;
+            width: 55px;
+        }
+
+        /* Downside causes overlapping */
+        .item-4 {
+            /* grid-row: 1/2;
+            grid-column: pehla/t; */
+        }
+
+        /* .item-2 {
+            justify-self: end;
+            align-self: start;
+        } */
+
+        .item-1 {
+            /* grid-row: 1/2; */
+            /* or you can do */
+            /* grid-row-start: 1;
+            grid-row-end: 2;
+            
+            /* Same thing */
+            grid-column: 1/2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>

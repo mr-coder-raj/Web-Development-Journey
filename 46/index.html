@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container {
+            background-color: rgb(9, 106, 106);
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box {
+            width: 34px;
+            height: 45px;
+            /* animation-name: RajKaAnimation;
+            animation-duration: 1 s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-direction: reverse;
+            animation-play-state: paused; */
+            animation: RajKaAnimation 2s ease-in-out 1s 1 reverse,
+                RajAn 3s ease-in-out 3s 1;
+        }
+
+        @keyframes RajKaAnimation {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: yellow;
+                transform: translateX(1000px);
+            }
+        }
+
+        @keyframes RajAn {
+            0% {
+                transform: rotate(100deg);
+                background-color: red;
+            }
+
+            20% {
+                transform: rotate(200deg);
+                background-color: orange;
+            }
+
+            50% {
+                transform: rotate(220deg);
+                background-color: orangered;
+            }
+
+            80% {
+                transform: rotate(300deg);
+                background-color: yellow;
+            }
+
+            100% {
+                transform: rotate(310deg);
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+
+</html>
